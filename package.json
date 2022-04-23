@@ -1,0 +1,19 @@
+{
+  "name": "mail-api",
+  "version": "1.0.0",
+  "description": "API exemplo de envio de e-mail",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js",
+    "prod": "pm2 start src/index.js --name mail-api -i max --watch"
+  },
+  "author": "Bernardo Domingues",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "nodemailer": "^6.7.3",
+    "nodemon": "^2.0.15"
+  }
+}
